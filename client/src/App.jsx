@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
-import ProductDetail from "./pages/ProductDetail";
+import ProductDetail from "./pages/ProductDetail.jsx";
 
 function App() {
   return (
@@ -14,6 +14,8 @@ function App() {
         <Route path="/products/:id" element={<ProductDetail />} />
       </Routes>
     </Router>
+
+    
   );
 }
 
