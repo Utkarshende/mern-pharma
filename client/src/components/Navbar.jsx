@@ -2,9 +2,14 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav style={{ padding: "20px", background: "#1e3a8a", color: "white" }}>
-      <Link to="/" style={{ marginRight: "20px", color: "white" }}>Home</Link>
-      <Link to="/products" style={{ color: "white" }}>Products</Link>
+    <nav className="bg-blue-700 text-white shadow-md">
+      <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
+        <h1 className="text-xl font-bold">PharmaCare</h1>
+        <div className="space-x-6">
+          <Link to="/" className="hover:text-gray-200">Home</Link>
+          <Link to="/products" className="hover:text-gray-200">Products</Link>
+        </div>
+      </div>
     </nav>
   );
 };
